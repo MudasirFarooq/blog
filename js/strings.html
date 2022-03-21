@@ -1,0 +1,53 @@
+<script>
+    //strings
+    var a = "hello";
+    var b = "world";
+    console.log(a + " " + b);
+
+    //srtirngs method
+    let str = "this string is use for slice method";
+    //lenght
+    const c = str.length;
+    console.log(c);
+
+    //slice => with slice we can fectch h part of string as a new string.in this method
+    //we pass 2 perameters first indicate the start index and second indicate the last index
+
+    let str2 =str.slice(4,11);//if we can not pass second parameter method return rest of the string
+    console.log(str2);
+    //we can also pass negtive parameters to slice method in that case string method position count starts from end of string
+
+    //substring =>same as slice but not accept negtive parameters
+
+    //substr =>same to the slice method but second parameters define the lenth of new string
+    let str3 =str.substr(4,7);//if we can not pass second parameter method return rest of the string
+    console.log(str3);
+
+    //replace => is used to change some part of string with another part store the result in new string
+    let newstr = str.replace("use","USE");
+    console.log(newstr);
+    //replace method can not change the privious string
+    console.log(str);
+    //replace method only change the first match.if u want to change all the match use /g flag like "/use/g"
+    // flag i/ is use for case insenstive
+
+    //toUppercase 
+    let upp  = str.toUpperCase();
+
+    //toLowercase 
+    let low  = str.toLowerCase();
+
+    //concat
+
+    let newstr2 = upp.concat(" ", low);
+    console.log(newstr2);
+
+    //trim method is used to trim extra spacees arround string
+    //padStrst is to add some padding before string
+    //padEnf is use to add some padding after string
+
+    //split method is use to convert a string into array we can split on "space"  ","  "|"
+    const arr = str.split(" ");
+    console.log(arr); 
+
+</script>

@@ -1,0 +1,40 @@
+<h2>JavaScript Closures</h2>
+
+<p>Counting with a local variable.</p>
+
+<button type="button" onclick="myFunction()">Count!</button>
+
+<p id="demo">0</p>
+<script>
+    //nested function 
+    function add() {
+        let a = 1;
+        function plus() {
+            return a += 1; //in nested function has access to scope above them 
+        }
+        plus();
+        return a;
+    }
+    console.log(add());
+
+    //closure
+    const add2 = (function () {
+        let counter = 0;
+        return function () { counter += 1; return counter; }
+    })();
+    function myFunction() {
+        document.getElementById("demo").innerHTML = add2();
+    }
+
+    //callback function =>  we pas a function as an argument to anoher function 
+
+    function sum(some){
+        console.log(some)
+    }
+    function calculator(a , b , callback) {
+        let c = a+b;
+        callback(c);
+    }
+    calculator(3,3,sum);
+
+</script>

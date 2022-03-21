@@ -1,0 +1,28 @@
+<script>
+//variables can be declare as var,const,let  for example
+var a = 3;
+const b = 4;
+let c = 4;
+let g = a + b + c;
+console.log(g);
+//var
+//variables defind with let have global scope
+//we can redeclare 'a' again like and also we can use variable before declaration 
+ a = 6;
+console.log(a);  //now a is 6 
+var a;
+//let
+// we can not redclare 'c' 
+//let c = 3;
+console.log(c); //it will show some error each variable defined with let must be declared before use
+// variables defind with let have block scope
+
+//const
+//we can not rediclare 'b' 
+//variables defiend with const can not be redeclared 
+b = 5;
+console.log(b);//if we reassign const  variable it will show some error
+//const have block scope
+
+//in javascript variales can be of any type like numbers, string, float atc
+</script>

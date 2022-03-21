@@ -1,0 +1,60 @@
+<script>
+    const arr = ["volvo","toyota","civic","honda"];
+    //toString method is use to convert an array into string(coma sparated);
+    let str = arr.toString();
+    console.log(str);
+    //join same to toString method but in addition you can specify the separator
+    console.log(arr.join(" * "));
+
+    //pop method remove last element from the array and return the value that was pop out
+    let val = arr.pop();
+    console.log(val);
+    console.log(arr);
+
+    //push method is use to add new element to array and returns new array lenght
+    let val1 = arr.push("MG");
+    console.log(val1);
+    console.log(arr);
+
+    //shift method remove first element of array and all remaining element shift back to lower index and return the shift value
+    let val2 = arr.shift();
+    console.log(val2);
+    console.log(arr);
+
+    //unshift method add element at the bigining and unsift all the oldder elements and return new lenght
+    let val3 = arr.unshift("KIA");
+    console.log(val3);
+    console.log(arr);
+    
+    //delete metohd also delete element from array but creates undefine hols in string
+    delete arr[2];
+    console.log(arr);
+
+    //string concat mthod add two or more arrays as a new array
+    const arr2 = ["volvo","toyota","civic","honda"];
+    const arr3 = arr.concat(arr2);
+    console.log(arr3);
+
+    //splice method is use to add new elements in array 
+    let cars = arr2.splice(2 , 1 ,"nisan" , "swift");//first parameter define the position and second define how many elements should be delete
+    console.log(cars);
+    console.log(arr2);
+
+    //slice method is used to fecth a part of array as a new array 
+    let slis = arr2.slice(1, 3);//we can use either one para or two para .first define tha strt position and second upto 
+    // end (but not include the end arrgument)
+    console.log(slis)
+
+    //sort method sort the array alphabetically 
+    //reverse method is used to revers the array .if we use it with sort method it will also sort array in desending order
+
+    //numeric sort() function return incorrect results...bydefulte sort method is used on strings
+
+    let numbr = [34,54,4,6,9,3,100];
+    console.log(numbr);
+    console.log(numbr.sort(function(a,b){ return a-b})); //accending order
+    console.log(numbr.sort(function(a,b){ return b-a})); //dccending order
+    console.log(numbr.sort(function(a,b){ return 0.5-Math.random()})); //rendom order
+    console.log(Math.max.apply(null, numbr));//max number
+    console.log(Math.min.apply(null, numbr));//min number
+</script>

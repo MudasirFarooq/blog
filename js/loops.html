@@ -1,0 +1,31 @@
+<script>
+    //while loop
+    let i = 0
+    while(i<10){
+        console.log(i);
+        i++
+    }
+
+
+    const arr = [3,5,2,12,8,9,1];
+    let len = arr.length
+    let maxnumb = -Infinity;
+    while(len--){
+        if(arr[len]>maxnumb){
+            maxnumb = arr[len]
+        }
+    }
+    console.log("max of array")
+    console.log(maxnumb);
+    console.log("for loop start")
+
+    //for loop
+    for(let i = 0; i<arr.length; i++){
+        console.log(arr[i]);
+    }
+    console.log("for..of start")
+    //for each 
+    for(let x of arr){
+        console.log(x);
+    }
+</script>

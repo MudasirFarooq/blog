@@ -1,0 +1,31 @@
+<script>
+    //string search
+    //indexof method return the position of first occuerence of specifid text
+
+    let str = "this string is use for slice method use";
+
+    let str2 =str.indexOf("use");
+    console.log(str2);
+
+    //lastIndexof method return the position of last occuerence of specifid text
+
+    let str3 =str.lastIndexOf("use");
+    console.log(str3);
+
+    //both methods takes second paremeter to specify the starting position
+
+    //serch method is same to indexof method but can not take second parameter
+    //match method use to serches a string for a match against regular expression and return all matches as an arrray
+
+    let arr = str.match(/use/g);
+    console.log(arr);
+
+    //include mthode retuns true if a sring containes specifid text
+    console.log(str.includes("use"));
+
+    //strtsWith method return ture if string starts with specifid text..also take second paramerter to define strt position
+    console.log(str.startsWith('this'));
+
+    //endsWith same just check string end with specified text and secod parameter defins the lenght
+    
+</script>

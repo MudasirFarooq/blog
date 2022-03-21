@@ -1,0 +1,29 @@
+<script>
+    function display(some){
+        console.log(some);
+    }
+    let mypromis = new Promise(function(myresolve,myreject){
+        let count = 0;
+        if(count == 0){
+            myresolve("ök promise give result");
+        }else{
+            myreject("error: rejected peomis");
+        }
+    })
+    /*mypromis.then(
+        function(value){
+            display(value);
+        },
+        function(error){
+            display(error);
+        }
+    )*/
+
+
+    //async await
+    async function awit(){
+        let result = await mypromis;
+        console.log(result);
+    }
+    awit();
+</script>

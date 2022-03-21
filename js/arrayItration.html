@@ -1,0 +1,44 @@
+<script>
+    //map method is used to perform some function on each element of array .method not execute function
+    //for array elemnts without valuse
+
+    let numbr = [34,54,4,6,9,3,100];
+     let numbr2 = numbr.map(myfun);
+     function myfun(value,index,array){
+        return value*2;
+     }
+     console.log(numbr2);
+
+     //filter methods creates a new array with elemnts who pass some condition
+    
+     let numbr3 = numbr.filter(myfun2);
+     function myfun2(value,index,array){
+        return value >10;
+     }
+     console.log(numbr3);
+
+     //every method use to check all elements to pass the test and return true or fals 
+     //some if some elements pass the test return true or fals
+     //array find() return the first element who pass the test 
+     //findindex return the index of first find element who pas the test
+     //indexof method is used to find the position of value
+     //lastindexof find last position of value
+
+     //array itrator
+
+     for(let x of numbr){
+         console.log(x);
+     }
+
+     //keys method retuns indexes of array
+     let key = numbr.keys() 
+     for(let x of key){
+         console.log(x);
+     }
+
+     //entries method return all keys and values of array
+     let key2 = numbr.entries() 
+     for(let x of key2){
+         console.log(x);
+     }
+</script>

@@ -1,0 +1,32 @@
+<script>
+    const person = {
+  fname:" John",
+  lname:" Doe",
+  age: 25
+};
+person.adress= "lahore";
+delete person.lname;
+person.lname = "Doe"
+console.log(person.age);
+for(let x in person){
+    console.log(person[x]);
+}
+
+person.name = function(){
+    return this.fname + " " + this.lname;
+}
+console.log(person.name());
+
+//Object.value(object) method create a array of object value as new array
+const myArray = Object.values(person);
+console.log(myArray);
+
+//JSON.stringyfy() method create a string of object as a new string
+let str = JSON.stringify(person);
+console.log(str);
+//this method not working on object methods .we can solve this to first stringify obj method
+person.name = person.name.toString();
+let str1 = JSON.stringify(person);
+console.log(str1);
+
+</script>

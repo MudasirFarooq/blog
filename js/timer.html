@@ -1,0 +1,23 @@
+<h1>SetTimeout/clearTimeout</h1>
+<h4>on click on button try it a alart box open after three second</h4>
+<h4>onclick on button stp timmer alart box will not open (if you click button in 3 second)</h4>
+<button onclick="mybtn = setTimeout(myfun,3000)">try it</button>
+<button onclick="clearTimeout(mybtn)">stop</button>
+<br><br>
+
+
+<h1>setInterval/clearinterval</h1>
+<br> 
+<h5 id="new"></h5>
+<button onclick="clearInterval(time)">stop</button>
+<script>
+    function myfun(){
+        alert("hello");
+    }
+
+    let time = setInterval(fun,1000);
+    function fun(){
+        let d = new Date();
+        document.getElementById('new').innerHTML = d.toLocaleTimeString();
+    }
+</script>

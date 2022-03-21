@@ -1,0 +1,65 @@
+<script>
+    //simple function 
+    function myfun(a ,b){
+        return a+b;
+    }
+    console.log(myfun(3,3));
+
+    //arrow function 
+    var a = ()=>{
+        console.log("hello from arrow func");
+    }
+    a();
+
+    //announimous function ..functions with no name like arrow function 
+     
+     //call method is used to use the methods of other objects
+
+     const person = {
+         fullname: function() { //also a anonymous function
+           return  this.firstname + " " +this.lastname;
+         }
+     }
+     const person1 = {
+         firstname : "ali",
+         lastname : "asad"
+     }
+     const person2 = {
+         firstname : "akbar",
+         lastname : "asalam"
+     }
+
+     let first_p1 = person.fullname.call(person1);
+     let first_p2 = person.fullname.call(person2);
+     console.log(first_p1);
+     console.log(first_p2);
+     //we can use also arguments in call
+
+     const person3 = {
+         fullname: function(val) { //also a anonymous function
+           return  this.firstname + " " +this.lastname + "from" + val; 
+         }
+     }
+     const person4 = {
+         firstname : "ali",
+         lastname : "asad"
+     }
+     const person5 = {
+         firstname : "akbar",
+         lastname : "asalam"
+     }
+
+     let first_p3 = person.fullname.call(person4);
+     let first_p4 = person.fullname.call(person5);
+     console.log(first_p3 ,"lahore");
+     console.log(first_p4 ,"pindi");
+
+     //apply method is similar to call method but its use arguments as an array and call takes argument separately
+     //bind method same but not taks arguments
+ 
+     //self invoke function functions who invokes automatically
+     (function(){
+        console.log("hello from self invoke function");  //also a anonymous functtion
+     })();
+
+</script>

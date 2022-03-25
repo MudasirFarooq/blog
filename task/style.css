@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.backg{
+    background-image: url("assets/AdvanceSearch-Mobile-Image.png");
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+body{
+    background: rgb(230, 226, 226);
+}
+.bgcolor{
+    background-color: rgba(32, 107, 245,0.5)!important;
+    color: white !important;
+}
+ul li a{
+    color: white !important;
+    font-size: 10px;
+}
+ul li a img{
+    width: 13px;
+    height: 13px;
+}
+.linklog{
+    background: blue;
+    padding: 10px auto; 
+    border-radius: 30px;
+    width: 120px;
+    font-size: 10px;
+    color: white !important;
+
+}
+.linklog img{
+    width: 13px;
+    height: 13px;
+}
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 4px 8px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #2d61ee;
+    color: white;
+    border-radius: 50px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  
+  button img{
+      height: 15px;
+      width: 15px;
+      float: left;
+      margin-top: 5px;
+  }
+  .head1{
+    padding-left: 165px ;
+  }
+  .last{
+      width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+      .backg{
+          height: 80vh;
+      }
+      .head1{
+        padding-left: 10px ;
+      }
+      .pagination a{
+          padding: 2px 6px;
+      }
+      .para{
+          font-size: 8px;
+          margin-left: 10px;
+          margin-top: 3px;
+      }
+      .btnclas{
+          width: 70%;
+      }
+      .fonts{
+          font-size: 13px !important;
+      }
+      .last{
+          width: 200px !important;
+          font-size: 10px;
+          align-items: center;
+      }
+  }

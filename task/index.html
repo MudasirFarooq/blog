@@ -18,13 +18,13 @@
             <nav class="navbar navbar-expand-lg navbar-light text-light">
                 <div class="container">
                     <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler border-warning" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav navres">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#"><img src="assets/search(w).svg" alt="">
                                     Advance search</a>
@@ -47,8 +47,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><img src="assets/add(w).svg" alt=""> Apply Now</a>
                             </li>
-                            <li class="nav-item me-0">
-                                <a class="nav-link linklog" href="#"><img src="assets/login(w).svg" alt=""> Account Log
+                            <li class="nav-item me-0 lastnav">
+                                <a class="nav-link linklog p-2" href="#"><img src="assets/login(w).svg" alt=""> Account Log
                                     In</a>
                             </li>
                         </ul>
@@ -57,28 +57,28 @@
             </nav>
         </div>
         <div class="container text-center text-light mt-4">
-            <h1>New Job,New Future</h1>
-            <p>Community Driven Staffing</p>
+            <h1 class="fs-4 mt-5">New Job,New Future</h1>
+            <p class="mb-3" style="font-size: 13px;">Community Driven Staffing</p>
         </div>
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-5 p-1">
-                    <input type="password" class="form-control mx-0" id="exampleInputPassword1"
+                    <input type="password" class="form-control mx-md-0  margx" id="exampleInputPassword1"
                         placeholder="Job Title & Keywords">
-                    <input type="password" class="form-control mt-2" id="exampleInputPassword1" placeholder="Location">
+                    <input type="password" class="form-control mt-md-2 mt-2 margx" id="exampleInputPassword1" placeholder="Location">
                 </div>
                 <div class="col-md-5 p-1">
-                    <select id="disabledSelect" class="form-select mx-0">
+                    <select id="disabledSelect" class="form-select mx-md-0 margx">
                         <option>Any Job Catrgories</option>
                     </select>
-                    <div class="row mt-1 px-2">
+                    <div class="row mt-1 px-md-2 px-2">
                         <div class="col-md-6 p-1">
-                            <select id="disabledSelect" class="form-select">
+                            <select id="disabledSelect" class="form-select margx">
                                 <option>Distance</option>
                             </select>
                         </div>
-                        <div class="col-md-6 p-1">
-                            <select id="disabledSelect" class="form-select">
+                        <div class="col-md-6 p-1 ">
+                            <select id="disabledSelect" class="form-select margx">
                                 <option>Posted Any Date</option>
                             </select>
                         </div>
@@ -209,10 +209,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 col-12 mt-2 d-flex">
-                <button class="btn btn-warning last mt-md-0 mt-2" ><img src="assets/save1(w).svg" alt=""> Save This
+            <div class="col-md-2 col-12 ">
+                <button class="btn btn-warning last" ><img src="assets/save1(w).svg" alt=""> Save This
                     Search</button>
-                <button class="btn btn-info mt-md-2 mt-2 last" ><img src="assets/share(w).svg" alt=""> Share This
+                <button class="btn btn-info mt-md-2  last" ><img src="assets/share(w).svg" alt=""> Share This
                     Search</button>
             </div>
         </div>
